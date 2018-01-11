@@ -24,8 +24,12 @@ def die_tester(count):
                 else:
                     aggregate[res] = 1
 
-            for key, total in aggregate.items():
-                print(key, total)
+            total = sum(aggregate.values())
+            for key, num in aggregate.items():
+                percent = (100.0 * float(num) / float(total))
+                print('%s: %s (%.2f%%)' % (key, 
+                                           num,
+                                           percent))
 
         return wrapped_f
     return wrap
