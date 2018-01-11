@@ -1,2 +1,2 @@
 # unweighted-die
-Using an unweighted die, generated a balanced throw
+Using an unweighted die, generate a balanced throw
